@@ -4,18 +4,18 @@
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
     <script>
     miro.onReady(() => {
-      miro.showNotification('Please keep Miro PHI Free')
       miro.initialize({
         extensionPoints: {
           bottomBar: {
-            title: 'Some title',
+            title: 'No PHI',
             svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
             onClick: () => {
-              alert('Hi!')
+              alert('Please keep Miro PHI Free!')
             }
           }
         }
       })
+      miro.showNotification('Please keep Miro PHI Free')
     })
     </script>
 </head>
